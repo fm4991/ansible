@@ -1,4 +1,7 @@
 ---
+ - hosts: all
+ user: root
+ become: yes
 - name: pull nginx from hub.docker.com
   docker_image:
     name: nginx
