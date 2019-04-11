@@ -10,6 +10,8 @@
         - yum-utils
         - device-mapper-persistent-data
         - lvm2
+  - name: "Install Docker SDK for Python"
+    shell: pip install docker
   - name: "Configuring docker-ce repo"
     get_url:
         url: https://download.docker.com/linux/centos/docker-ce.repo
