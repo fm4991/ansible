@@ -1,0 +1,10 @@
+- name: pull nginx from hub.docker.com
+  docker_image:
+    name: nginx
+    
+- name: start nginx on port 80
+  docker_container:
+    name: nginx80
+    image: nginx
+    ports:
+     - "80:80"
